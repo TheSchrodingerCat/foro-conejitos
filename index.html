@@ -3,13 +3,38 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-escalable=no, initial-scale=1, maximum-scale=1, minimun-scale=1">
-	<title>Foro Conejos</title>
+	<title>Foro Bunny</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-	
+	<header class="container">
+		<div class="row">
+			<div class="col offset-s2 s8">
+				<h1>Foro sobre conejitos</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col offset-s2 s8">
+				<form action="">
+					<label>Nombre: </label>
+					<input type="text" id="nombre">
+					<label>Mensaje: </label>
+					<textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+					<button>Enviar</button>
+				</form>
+			</div>
+		</div>
+	</header>
+
+	<section class="container">
+		<div class="col offset-s3 s6">
+			<div id="comentarios"></div>
+		</div>
+	</section>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
 	<script src="assets/js/app.js"></script>
 </body>
 </html>
